@@ -19,7 +19,7 @@ const DisplayAll = () => {
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg w-60 ">
-        <img src='https://source.unsplash.com/random' alt='' className='w-half'/>
+        <img src='https://source.unsplash.com/random' alt='filtered_photo' className='w-half'/>
         <div className="px-6 py-4">
             <div className="font-bold text-gray-200 text-xl mb-2">
                 Scuba Mask
