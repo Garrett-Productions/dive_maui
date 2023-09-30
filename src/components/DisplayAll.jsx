@@ -8,8 +8,11 @@ const DisplayAll = () => {
     const [term, setTerm] = useState('snorkel')
 
     useEffect(() => {
-        fetch(`https://pixabay.com/api/?key=${import.meta.env.VITE_API_KEY}&q=${term}&image_type=photo&pretty=true`)
-        .then(res => res.json())
+        fetch(`https://pixabay.com/api/?key=${import.meta.env.VITE_API_KEY}&q=${term}&category=places&pretty=true`)
+        .then((res) => {
+            res.json()
+            console.log(data.hits)
+        })
         .then(data => {
             setImages(data.hits);
             setIsLoading(false);
