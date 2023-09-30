@@ -11,10 +11,9 @@ const DisplayAll = () => {
         fetch(`https://pixabay.com/api/?key=${import.meta.env.VITE_API_KEY}&q=${term}&category=places&pretty=true`)
         .then((res) => {
             res.json()
-            console.log(data.hits)
-        })
-        .then(data => {
-            setImages(data.hits);
+            console.log(res)
+            setImages(res.hits);
+            console.log(images)
             setIsLoading(false);
         })
         .catch(err => console.log(data))
@@ -46,4 +45,4 @@ const DisplayAll = () => {
   )
 }
 
-export default DisplayAll
+export default DisplayAll;
