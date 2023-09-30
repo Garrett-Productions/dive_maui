@@ -11,8 +11,8 @@ function App() {
     <>
       <NavBar />
       <Main />
-      <LocalWeather />
       <DisplayAll />
+      <LocalWeather />
       <Footer />
     </>
   )
