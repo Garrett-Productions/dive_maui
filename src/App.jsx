@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 
 function App() {
-
+// refactoring to full stack
   return (
     <>
       <NavBar />
